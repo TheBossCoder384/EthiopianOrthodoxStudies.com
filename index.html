@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="gez">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ውዳሴ ማርያም & ቅዳሴ መማር</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📖 ውዳሴ ማርያም & ቅዳሴ አፈላለግ</h1>
+
+  <div id="mode-select">
+    <button onclick="loadQuestions(shortQuestions)">▶ አጭር ስም</button>
+    <button onclick="loadQuestions(fullQuestions)">📜 ሙሉ ጽሑፍ</button>
+    <button onclick="startTestMode()">📝 Test Day Mode</button>
+  </div>
+
+  <div id="timer-settings" style="display:none;">
+    <label>⏱ የጊዜ ግዜ ምርጫ:</label>
+    <select id="time-select">
+      <option value="30">30 ሰከንድ</option>
+      <option value="60" selected>60 ሰከንድ</option>
+      <option value="90">90 ሰከንድ</option>
+    </select>
+  </div>
+
+  <div id="quiz"></div>
+
+  <div class="progress">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
